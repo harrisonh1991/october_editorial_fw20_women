@@ -35,14 +35,14 @@ const App = () => (
                 content="纵观几大时装周，格纹元素是本季无法忽视的重头戏。颇具年代感的面料以复古配色致敬传统手工艺，同时采用更为宽大肃穆的廓形模糊性别界限，将乡村感与都市感巧妙结合，既怀旧摩登又时尚新潮。"
                 scrollMagicItems={[{
                     triggerElement: 'sm1_1',
-                    children:(<Image image={{src: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/9/16022347132876974.png'}}/>),
+                    children:(<Image image={{mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543354896207.jpg', desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543337675609.jpg'}}/>),
                     from: {rotation:3},
                     to: {rotation:0},
                     duration: '300'
                 },
                 {
                     triggerElement: 'sm1_2',
-                    children:(<Image image={{src: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/9/16022347133744245.png'}}/>),
+                    children:(<Image image={{mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543343879889.jpg', desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543335755485.jpg'}}/>),
                     from: {rotation:10},
                     to: {rotation:0},
                     duration: '300'
@@ -284,7 +284,7 @@ const App = () => (
                 content: '探寻潮流与生活的更多可能。'
             }}
             cta={{
-                link: 'https://cn.iteshop.com/b_it/landingPage/october-edirorial-m',
+                link: 'https://cn.iteshop.com/b_it/landingPage/october-fw20-m',
                 content: '探索男士'
             }}
             />

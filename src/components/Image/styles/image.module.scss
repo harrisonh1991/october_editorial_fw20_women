@@ -1,0 +1,24 @@
+@import "framework";
+
+@mixin image {
+    display: block;
+    width: 100%;
+}
+
+.image{
+    @include image;
+}
+
+.image_dt{
+    @include image;
+    @include media-max($rwd-pc-hd){
+        display: none;
+    }
+}
+
+.image_mb{
+    @include image;
+    @include media-min($rwd-pc-hd){
+        display: none;
+    }
+}

@@ -1,0 +1,30 @@
+@import 'framework';
+
+
+.swiper{
+    &-{
+        &scrollbar{
+            height: 1px;
+            overflow: visible;
+            background-color: black;
+            margin-bottom: 10px;
+            margin-top: 20px;
+            &-drag{
+                height: 5px;
+                transform: translateY(-2.5px);
+                background: black;
+                position: relative;
+                top: -2px;
+            }
+        }
+    }
+
+    @include media-min($rwd-pc-hd){
+        &-{
+            &scrollbar{
+                display: none;
+            }
+        }
+    }   
+
+}

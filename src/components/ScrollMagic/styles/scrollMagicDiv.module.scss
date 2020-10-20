@@ -1,0 +1,55 @@
+@import 'framework';
+
+.background_bk{
+    background-color: black;
+}
+
+.background_wh{
+    background-color: white;
+}
+
+
+.photos{
+    margin-top: 71px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    &__item{
+        flex: 0 0 100%;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@include media-max($rwd-pc-hd){
+    .flex{
+        &__item{
+            &:not(:first-of-type){
+                padding-top: 20px;
+            }
+        }
+    } 
+
+    .scrollMagic__div{
+        transform: unset !important;
+        padding: 0 !important;
+    }
+}
+
+@include media-min($rwd-pc-hd){
+    .photos{
+        margin-top: 152px;
+    }
+
+    .flex{
+        display: flex;
+        flex-wrap: nowrap;
+        &__item{
+            flex: 1 1 auto;
+            width: auto;
+            margin: 0 20px;
+        }
+    }
+}

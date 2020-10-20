@@ -1,0 +1,19 @@
+$rwd-mb-s: 320px;
+$rwd-mb-m: 375px;
+$rwd-mb-l: 425px;
+$rwd-pad: 768px;
+$rwd-pc-hd: 1024px;
+$rwd-pc-2k: 2048px;
+$rwd-pc-4k: 3840px;
+
+@mixin media-min($value) {
+    @media (min-width: $value) {
+        @content;
+    }
+}
+
+@mixin media-max($value) {
+    @media (max-width: $value - 1px) {
+        @content;
+    }
+}

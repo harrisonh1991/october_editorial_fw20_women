@@ -1,0 +1,59 @@
+@import "framework";
+
+.container{
+    @include container;
+    max-width: 884px;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title{
+    font-size: 26px;
+    margin: 0
+}
+
+.content{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.desc{
+    text-align: left;
+}
+
+.desc, .media{
+    flex:  0 0 100%;
+}
+
+.cta{
+    width: 100%;
+}
+
+@include media-max($rwd-pc-hd){
+    .title,
+    .cta{
+        margin-top: 20px;
+    }
+}
+
+@include media-min($rwd-pc-hd){
+    .cta{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .container{
+        margin-top: 130px;
+        flex-wrap: nowrap;
+    } 
+    .desc_inner{
+        width: 80%;
+        height: 100%;
+        position: relative;
+    }
+    .desc, .media{
+        flex:  1 1 50%;
+        margin: 0 15px;
+    }
+}

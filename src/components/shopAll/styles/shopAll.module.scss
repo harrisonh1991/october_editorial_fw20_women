@@ -1,0 +1,18 @@
+@import "framework";
+
+.container{
+    margin-top: 60px;
+    @include container;
+}
+
+@include media-min($rwd-pad){
+    .container{
+        max-width: 325px;
+    }
+}
+
+@include media-min($rwd-pc-hd){
+    .container{
+        margin-top: 90px;
+    }
+}

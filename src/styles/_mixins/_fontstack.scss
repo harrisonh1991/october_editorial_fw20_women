@@ -1,0 +1,31 @@
+@mixin fontstack($type) {
+    @if $type == "primary" {
+        font-family: 'HelveticaNeue';
+    } @else if $type == "secondary" {
+        font-family: 'TitlingGothicFBExtendedStandard';
+    }
+}
+
+/*
+    $font :(
+        font1: woff, woff2,
+        font2: svg
+    )
+*/
+
+@mixin getFontFamily($url, $name) {
+    @font-face{
+        font-family: $name;
+        src: url($url + $name + '.woff') format('woff'),
+            url($url + $name + '.woff2') format('woff2')
+    }   
+}
+
+@function getFontUrl($loc) {
+    @if $loc == 'hk' {
+        @return 'https://hk.iteshop.com/project/resource/font/'; 
+    } 
+    @else{
+        @return 'https://cn.iteshop.com/crm/resource/font/'; 
+    }
+}

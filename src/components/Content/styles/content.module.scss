@@ -1,0 +1,43 @@
+@import "framework";
+
+.container{
+    @include container;
+    margin-top: 70px;
+}
+
+
+.image{
+    @include maxWidth(552px);
+}
+
+.title{
+    font-size: 30px;
+    margin: 0;
+    line-height: .7;
+    &:not(:first-of-type){
+        margin: 10px;
+    }
+}
+
+.content{
+    font-size: 14px;
+    margin-top: 33px;
+    line-height: 1.4;
+    @include maxWidth(667px);
+}
+
+@include media-min($rwd-pc-hd){
+
+    .container{
+        margin-top: 130px;
+    }
+
+    .title{
+        font-size: 54px;
+    }
+
+    .content{
+        margin-top: 60px;
+    }
+
+}

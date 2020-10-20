@@ -1,0 +1,9 @@
+@mixin removeRecommentDiv {
+    .article-select-recommend{
+        display: none;
+    }
+}
+
+@mixin changeHeaderColor($bgcolor ,$color) {
+    
+}

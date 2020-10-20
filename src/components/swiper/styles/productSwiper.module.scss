@@ -1,0 +1,41 @@
+@import "framework";
+
+.image{
+    display: block;
+}
+
+.photos{
+    padding-top: 71px;
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+}
+
+.desc{
+    margin-top: 10px;
+}
+
+.string{
+    margin: 0;
+    line-height: 1.4;
+}
+
+.container{
+    @include container-left;
+    padding-top: 60px;
+    text-align: center;
+}
+
+@include media-min($rwd-pc-hd){
+    .photos{
+        padding-top: 152px;
+    }
+
+    .container{
+        padding: 0 20px;
+        padding-top: 100px;
+        text-align: left;
+    }
+}

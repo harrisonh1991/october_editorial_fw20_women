@@ -1,0 +1,31 @@
+@import 'framework';
+@include removeRecommentDiv;
+
+.App {
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 1;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 60px;
+  @include container-full;
+}
+
+.main{
+  @include container-center;
+  max-width: 1440px;
+}
+
+.noMargin{
+  margin: 0;
+}
+
+@include media-max($rwd-pc-hd){
+  .App{
+    margin-bottom: 100px;
+  }
+  .scrollMagic__div{
+      transform: unset !important;
+      padding: 0 !important;
+  }
+}

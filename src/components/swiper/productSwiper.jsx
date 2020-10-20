@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles/productSwiper.module.scss';
 import Swiper from 'react-id-swiper';
-import Image from '../Image/image';
+import Image from '../Image/image.jsx';
 
 import 'swiper/swiper.scss';
 import './styles/swiper.scss';

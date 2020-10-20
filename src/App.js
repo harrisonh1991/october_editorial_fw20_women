@@ -272,7 +272,7 @@ const App = () => (
             />
             <ShopAll 
                 cta={{
-                    link: "https://cn.iteshop.com/b_it/men/new-arrivals",
+                    link: "https://cn.iteshop.com/b_it/women/new-arrivals",
                     content: '选购全部'
                 }}
             />  
@@ -284,7 +284,7 @@ const App = () => (
                 content: '探寻潮流与生活的更多可能。'
             }}
             cta={{
-                link: 'https://cn.iteshop.com/b_it/landingPage/october-edirorial',
+                link: 'https://cn.iteshop.com/b_it/landingPage/october-edirorial-m',
                 content: '探索男士'
             }}
             />

@@ -13,18 +13,19 @@ import './App.scss';
 const App = () => (
     <article className="App">
         <ScrollMagicDiv 
+            rootBackground= "black"
             scrollMagicItems={[{
                 triggerElement: 'sm0',
                 pin: true, 
                 duration: "1000",
                 triggerHook:'onLeave',
-                from:{ rotation: -360, scale: .35, y: '-35%', top: 0, paddingBottom: '0px', paddingTop:'0', backgroundColor: 'white'},
+                from:{ rotation: -360, scale: .25, y: '-35%', top: 0, paddingBottom: '0px', paddingTop:'0'},
                 to: { rotation: 0, scale: 1, y: '0%', top: 0, paddingBottom: '0px', paddingTop:'700px',},
                 children: (
                     <Hero 
                         banner={<Image image={{ mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483890313777.jpg", desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483853918551.jpg'}}/>}
                         title={<div>风格盛宴<br/>直击 <i>2020</i> 秋冬潮流趋势</div>}
-                        content="2020 年已然过半，在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。撷取日常，贡献创意，引发思考，设计师们用作品和传统工艺对话，与现代风格交手，兼收并蓄，多面展现时尚的魅力，带领我们共同探寻潮流与生活的更多可能。"
+                        content="“在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。撷取日常、贡献创意、引发思考——设计师们用作品和传统工艺对话，与现代风格交手，兼收并蓄，多面展现时尚的魅力，带领我们共同探寻潮流与生活的更多可能。” "
                     />
                 )
             }]}>
@@ -36,14 +37,14 @@ const App = () => (
                 scrollMagicItems={[{
                     triggerElement: 'sm1_1',
                     children:(<Image image={{mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543354896207.jpg', desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543337675609.jpg'}}/>),
-                    from: {rotation:3},
+                    from: {rotation:3, marginRight: 10, marginLeft: 10},
                     to: {rotation:0},
                     duration: '300'
                 },
                 {
                     triggerElement: 'sm1_2',
                     children:(<Image image={{mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543343879889.jpg', desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543335755485.jpg'}}/>),
-                    from: {rotation:10},
+                    from: {rotation:10,  marginRight: 10, marginLeft: 10},
                     to: {rotation:0},
                     duration: '300'
                 }]}
@@ -55,9 +56,9 @@ const App = () => (
                     imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
                     lists: [
                         {
-                            sku: 'ANXPTAK0338XFPKZ',
-                            name: '格纹阔腿休闲裤',
-                            brand: 'Acne Studios',
+                            sku: 'ZVXPTCE0110FFGYX',
+                            name: 'Peter 饰口袋格纹休闲裤',
+                            brand: 'Zadig & Voltaire',
                         },
                         {
                             sku: 'JNPDSPW2A7WDFNYZ',
@@ -70,9 +71,9 @@ const App = () => (
                             brand: 'Acne Studios',
                         },
                         {
-                            sku: 'IROOC213MALXFGRZ',
-                            name: '双口袋落肩格纹外套',
-                            brand: 'IRO',
+                            sku: 'MSGOC05Y667AFBGZ',
+                            name: '饰腰带格纹外套',
+                            brand: 'MSGM',
                         }
                     ]
                 }}
@@ -83,14 +84,14 @@ const App = () => (
                 scrollMagicItems={[{
                     triggerElement: 'sm2_1',
                     children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483877091150.jpg', mobile:'//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483897397237.jpg'}}/>),
-                    from: {rotation:3},
+                    from: {rotation:3, marginRight: 10, marginLeft: 10},
                     to: {rotation:0},
                     duration: 300,
                 },
                 {
                     triggerElement: 'sm2_2',
                     children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483856581770.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/160264839006165.jpg'}}/>),
-                    from: {rotation:-10},
+                    from: {rotation:-10, marginRight: 10, marginLeft: 10},
                     to: {rotation:0},
                     duration: 300,
                 }]}
@@ -111,40 +112,40 @@ const App = () => (
                             brand: 'SJYP',
                         },
                         {
-                            sku: 'ENFTP301010XFBLZ',
-                            name: '褶饰叠层拼色上衣',
-                            brand: 'ENFOLD',
+                            sku: 'JNPSWPW2A9KAFBWZ',
+                            name: '饰 logo 针织拼接卫衣',
+                            brand: 'SJYP',
                         },
                         {
-                            sku: 'ENFSK310740XFNYZ',
-                            name: 'ENFOLD',
-                            brand: '叠层拼接半身裙',
+                            sku: '5KXSKS05120XFNYX',
+                            name: '材质拼接不对称半身裙',
+                            brand: 'KOLOR',
                         }
                     ]
                 }}
             />
             <ProductShow 
                 title="维多利亚风格复辟古典" 
-                content="拼接作为这一季的关键词，再次带来了不小的惊喜。设计师们将不同材质随心剪裁、自由组合，让高饱和度、高明度的色彩相互碰撞，用新颖的重叠和搭配打破常规，展现了一个又一个有趣的灵魂。"
+                content="2020 年秋冬季大举复古旗帜，将荷叶边、褶饰、蕾丝、羊腿袖等维多利亚时期的元素带回流行，高调歌颂浪漫主义与古典艺术。在保留传统审美的基础上，服饰设计以更为轻便现代的方式呈现，融入利落剪裁和率性酷感，满足着装需求之余也流露女性反叛意识。"
 
                 scrollMagicItems={[{
                     triggerElement: 'sm3_1',
                     children:(<Image image={{ src: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483876985915.jpg'}}/>),
-                    from: {rotation:10},
+                    from: {rotation:10, marginRight: 10, marginLeft: 10},
                     to: {rotation:0},
                     duration: 300
                 },
                 {
                     triggerElement: 'sm3_2',
                     children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/1602648387980436.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483881579611.jpg'}}/>),
-                    from: {rotation:20},
+                    from: {rotation:20, marginRight: 10, marginLeft: 10},
                     to: {rotation:0},
                     duration: 300
                 },
                 {
                     triggerElement: 'sm3_3',
                     children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483815051077.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483881587833.jpg'}}/>),
-                    from: {rotation:-20},
+                    from: {rotation:-20, marginRight: 10, marginLeft: 10},
                     to: {rotation:0},
                     duration: 300
                 }]}
@@ -184,14 +185,14 @@ const App = () => (
                 scrollMagicItems={[{
                     triggerElement: 'sm4_1',
                     children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483812502540.jpg', mobile:'//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483883307777.jpg'}}/>),
-                    from: {rotation:10},
+                    from: {rotation:10, marginRight: 10, marginLeft: 10},
                     to: {rotation:0},
                     duration: 300
                 },
                 {
                     triggerElement: 'sm4_2',
                     children:(<Image image={{ src: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483846561791.jpg'}}/>),
-                    from: {rotation:-10},
+                    from: {rotation:-10, marginRight: 10, marginLeft: 10},
                     to: {rotation:0},
                     duration: 300
                 }]}
@@ -212,9 +213,9 @@ const App = () => (
                             brand: 'Tibi',
                         },
                         {
-                            sku: 'MSGSPB03652AFRDX',
-                            name: '饰口袋皮革感短裤',
-                            brand: 'MSGM',
+                            sku: 'ZVXLECC1402FFBWX',
+                            name: '双口袋皮革夹克',
+                            brand: 'Zadig & Voltaire',
                         },
                         {
                             sku: 'ANXLE1AZ166XDBKX',
@@ -230,14 +231,14 @@ const App = () => (
                 scrollMagicItems={[{
                     triggerElement: 'sm5_1',
                     children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483821094942.jpg', mobile:'//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483887295464.jpg'}}/>),
-                    from: {rotation: -20},
+                    from: {rotation: -20, marginRight: 10, marginLeft: 10},
                     to: {rotation:0},
                     duration: 300
                 },
                 {
                     triggerElement: 'sm5_2',
                     children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483829061284.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483892281804.jpg'}}/>),
-                    from: {rotation: 10},
+                    from: {rotation: 10, marginRight: 10, marginLeft: 10},
                     to: {rotation:0},
                     duration: 300
                 }]}
@@ -248,9 +249,9 @@ const App = () => (
                     imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
                     lists: [
                         {
-                            sku: 'OFWJK050011XFBKX',
-                            name: '饰 logo 单粒扣西装外套',
-                            brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
+                            sku: 'ZVXJKCP0202FFBDX',
+                            name: 'Visko 饰口袋天鹅绒西装外套',
+                            brand: 'Zadig & Voltaire',
                         },
                         {
                             sku: 'OFWOC222011XFBKX',
@@ -258,21 +259,21 @@ const App = () => (
                             brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
                         },
                         {
-                            sku: 'OFWOC218026XFBGX',
-                            name: '饰口袋直排扣外套',
-                            brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
+                            sku: 'QJXOC628893XFBKX',
+                            name: '马甲拼接系扣外套',
+                            brand: 'MCQ',
                         },
                         {
-                            sku: 'HLXOC04HW40XFBKX',
-                            name: '饰腰带外套',
-                            brand: 'HELMUT LANG',
+                            sku: 'ZVXJKCA0204FFBGX',
+                            name: 'Viva 星星缀饰西装外套',
+                            brand: 'Zadig & Voltaire',
                         }
                     ]
                 }}
             />
             <ShopAll 
                 cta={{
-                    link: "https://cn.iteshop.com/b_it/women/new-arrivals",
+                    link: "https://cn.iteshop.com/b_it/OCT-EDITORIAL-W",
                     content: '选购全部'
                 }}
             />  

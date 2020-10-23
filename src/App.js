@@ -25,7 +25,7 @@ const App = () => (
                     <Hero 
                         banner={<Image image={{ mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483890313777.jpg", desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483853918551.jpg'}}/>}
                         title={<div>风格盛宴<br/>直击 <i>2020</i> 秋冬潮流趋势</div>}
-                        content="“在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。撷取日常、贡献创意、引发思考——设计师们用作品和传统工艺对话，与现代风格交手，兼收并蓄，多面展现时尚的魅力，带领我们共同探寻潮流与生活的更多可能。” "
+                        content="在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。撷取日常、贡献创意、引发思考——设计师们用作品和传统工艺对话，与现代风格交手，兼收并蓄，多面展现时尚的魅力，带领我们共同探寻潮流与生活的更多可能。"
                     />
                 )
             }]}>
@@ -36,14 +36,14 @@ const App = () => (
                 content="纵观几大时装周，格纹元素是本季无法忽视的重头戏。颇具年代感的面料以复古配色致敬传统手工艺，同时采用更为宽大肃穆的廓形模糊性别界限，将乡村感与都市感巧妙结合，既怀旧摩登又时尚新潮。"
                 scrollMagicItems={[{
                     triggerElement: 'sm1_1',
-                    children:(<Image image={{mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543354896207.jpg', desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543337675609.jpg'}}/>),
+                    children:(<Image image={{mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483891175876.jpg', desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483841753522.jpg'}}/>),
                     from: {rotation:3, marginRight: 10, marginLeft: 10},
                     to: {rotation:0},
                     duration: '300'
                 },
                 {
                     triggerElement: 'sm1_2',
-                    children:(<Image image={{mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543343879889.jpg', desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543335755485.jpg'}}/>),
+                    children:(<Image image={{mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483894769431.jpg', desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483847422292.jpg'}}/>),
                     from: {rotation:10,  marginRight: 10, marginLeft: 10},
                     to: {rotation:0},
                     duration: '300'

@@ -2,8 +2,11 @@
 
 .swiper{
     &-{
+        &container{
+            padding-bottom: 40px;
+        }
         &scrollbar{
-            height: 1px;
+            height: 1px !important;
             overflow: visible;
             background-color: black;
             margin-bottom: 10px;

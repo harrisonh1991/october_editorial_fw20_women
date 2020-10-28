@@ -2,7 +2,6 @@ import React from 'react';
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 import Hero from './components/Hero/Hero.jsx';
-import ScrollMagicDiv from './components/ScrollMagic/ScrollMagicDiv.jsx';
 import ProductShow from "./components/productShow/productShow.jsx";
 import Image from './components/Image/image.jsx';
 import RedirectBannerCta from './components/Redirect/redirectBannerCta.jsx';
@@ -12,24 +11,11 @@ import './App.scss';
 
 const App = () => (
     <article className="App">
-        <ScrollMagicDiv 
-            rootBackground= "black"
-            scrollMagicItems={[{
-                triggerElement: 'sm0',
-                pin: true, 
-                duration: "1000",
-                triggerHook:'onLeave',
-                from:{ rotation: -360, scale: .25, y: '-35%', top: 0, paddingBottom: '0px', paddingTop:'0'},
-                to: { rotation: 0, scale: 1, y: '0%', top: 0, paddingBottom: '0px', paddingTop:'700px',},
-                children: (
-                    <Hero 
-                        banner={<Image image={{ mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483890313777.jpg", desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483853918551.jpg'}}/>}
-                        title={<div>风格盛宴<br/>直击 <i>2020</i> 秋冬潮流趋势</div>}
-                        content="在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。撷取日常、贡献创意、引发思考——设计师们用作品和传统工艺对话，与现代风格交手，兼收并蓄，多面展现时尚的魅力，带领我们共同探寻潮流与生活的更多可能。"
-                    />
-                )
-            }]}>
-        </ScrollMagicDiv>
+        <Hero 
+            banner={<Image image={{ mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483890313777.jpg", desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483853918551.jpg'}}/>}
+            title={<div>风格盛宴<br/>直击 <i>2020</i> 秋冬潮流趋势</div>}
+            content="在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。撷取日常、贡献创意、引发思考——设计师们用作品和传统工艺对话，与现代风格交手，兼收并蓄，多面展现时尚的魅力，带领我们共同探寻潮流与生活的更多可能。"
+        />
         <main className="main">
             <ProductShow 
                 title="复古格纹大势回潮" 

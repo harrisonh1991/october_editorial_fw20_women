@@ -194,9 +194,9 @@ const App = () => (
                             brand: 'Zadig & Voltaire',
                         },
                         {
-                            sku: 'TIBSPFP4107XFBKX',
-                            name: '车线边饰皮革感短裤',
-                            brand: 'Tibi',
+                            sku: 'ZVXSPCU1407FFBKX',
+                            name: '褶皱效果皮革感短裤',
+                            brand: 'Zadig & Voltaire',
                         },
                         {
                             sku: 'ZVXLECC1402FFBWX',

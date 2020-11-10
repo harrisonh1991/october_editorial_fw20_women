@@ -3,10 +3,10 @@ import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import * as ScrollMagic from "scrollmagic";
 import styles from './styles/hero.module.scss';
 import Content from '../Content/content.jsx';
-import { TweenMax, TimelineMax, Sine } from "gsap";
+import { TweenMax, Sine } from "gsap";
 import { useMediaQuery } from 'react-responsive';
 
-ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
+ScrollMagicPluginGsap(ScrollMagic, TweenMax);
 
 const Hero = props => {
 
@@ -20,11 +20,8 @@ const Hero = props => {
     let controller, tl;
 
     useEffect(() => {
-        console.log(desktopDevice);
         if(desktopDevice) {
             controller = new ScrollMagic.Controller();
-            tl = new TimelineMax();
-            //tl.to(containerRef.current, 4, {rotation: 100, ease: Sine.Out });
 
             new ScrollMagic.Scene({
                 triggerElement: containerRef.current,
@@ -41,9 +38,7 @@ const Hero = props => {
     function onPinScrollProgress(e) {
         let scaleProgress = ((e.progress / 0.8) * 0.75) + 0.25;
         let yProgress = (1 - (e.progress/ 0.8)) * 30;
-
         let progress = e.progress / 0.8;
-        console.log(scaleProgress.toFixed(2));
 
         if(progress > 1) {
             progress = 1;

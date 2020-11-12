@@ -7,7 +7,8 @@
         }
         &scrollbar{
             height: 1px !important;
-            overflow: visible;
+            overflow: visible !important;
+            position: relative !important;
             background-color: black;
             margin-bottom: 10px;
             margin-top: 20px;
